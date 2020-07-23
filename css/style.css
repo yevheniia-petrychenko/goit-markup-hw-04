@@ -63,7 +63,7 @@ body {
     margin-left: 85px;
 }
 
-.site-nav .nav-item:not(last-child) {
+.site-nav li:not(last-child) {
     margin-left: 50px;
 }
 
@@ -85,13 +85,25 @@ body {
      color: var(--accent-colour)
     }
 
-
-.nav-item.current {
-    display: block;
+.nav-item li {
     padding-top: 32px;
-    padding-bottom: 32px;
+}
+.nav-item.current{
+    display: block;
     color: var(--accent-colour);
     text-decoration:none;
+}
+.nav-item.current::after {
+    width: 50px;
+    content: "";
+    display: block;
+    align-content: stretch;
+    position: absolute;
+    margin-bottom: 28px;
+    margin-top: 0px;
+    height: 5px;
+    background-color: var(--accent-colour);
+    border-radius: 2px;
 }
 
 .contacts, .site-nav {
@@ -122,6 +134,7 @@ body {
 .page-header .container {
     display: flex;
     align-items: center;
+    text-align: center;
     background-color: var(--background-colour);
 }
 /* block hero */
@@ -130,6 +143,15 @@ body {
     background-color: var(--transparent-background);
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: 
+    linear-gradient( 
+    var(--transparent-background), var(--transparent-background)),
+    url(../images/header.jpg);
+    height: 600px;
+    max-width: 1600px;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 .hero .hero-title {
     font-weight: 900;
@@ -165,19 +187,26 @@ body {
  .advantages-list {
      width: 270px;
  }
-.advantages-item {
-    display : inline-block;
-    vertical-align: middle;
-    border: 1px solid transparent;
-    box-sizing: border-box;
-    border-radius: 4px;
-    width: 270px;
-    height: 120px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background-color: #F5F4FA;
-    margin-bottom: 30px;
-
+ .advantages-list::before {
+     content: "";
+     background-color: #F5F4FA;
+     display : block;
+     background-repeat: no-repeat;
+     background-position: center;
+     border: 1px solid transparent;
+     box-sizing: border-box;
+     border-radius: 4px;
+     width: 270px;
+     height: 120px;
+     padding-top: 25px;
+     padding-bottom: 25px;
+     margin-bottom: 30px;
+ }
+.advantages-icon {
+    width: 70px;
+    height: 54px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .section-block {
     padding-top: 94px;
@@ -261,6 +290,11 @@ margin-left: 30px;
 .social-media-list {
     display: flex;
 }
+.social-media-list a {
+    width: 44px;
+    height: 44px;
+    display: block;
+}
 .social-media + .social-media {
 margin-left: 10px;
 }
@@ -310,6 +344,31 @@ margin-left: 30px;
 .footer-container1 .logo {
     margin-bottom: 20px;
 }
+.footer .social-media-list a {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .social-media-list li {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.footer .twitter {
+    background-image: url(../images/twitter1.svg);
+}
+.footer .linkedin {
+    background-image: url(../images/linkedin1.svg); 
+}
+.footer .instagram {
+    background-image: url(../images/instagram1.svg);
+}
+.footer .facebook {
+    background-image: url(../images/facebook1.svg);
+}
+.social-media-list li :hover,
+.social-media-list li :focus {
+    background-color: var(--accent-colour);
+}
 .footer-container2 {
     margin-right: 94px;
     width: 206px;
@@ -336,7 +395,33 @@ margin-left: 30px;
     color: var(--background-colour);
     margin-bottom: 20px;
 }
+.footer .button1 {
+    display: inline-flex;
+    align-items: center;
+    padding-right: 28px;
+    padding-left: 29px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 12px;
+    font-family: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--background-colour);
+    background-color: var(--accent-colour);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
 
+.button1::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url(../images/icon-send.svg);
+    background-size: contain;
+
+
+}
 /* styles for portfolio */      
 /* button */
 

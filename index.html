@@ -19,8 +19,8 @@
                 <a class="logo" href="./index.html"><span class="accent">Web</span> Studio</a>
                 <ul class="site-nav">
                     <li><a class="nav-item current" href="">Студия</a></li>
-                    <li><a class="nav-item" href="./portfolio.html">Портфолио</a></li>
-                    <li><a class="nav-item" href="">Контакты</a></li>
+                    <li><a  class="nav-item" href="./portfolio.html">Портфолио</a></li>
+                    <li><a  class="nav-item" href="">Контакты</a></li>
 
                 </ul>
             </nav>
@@ -40,23 +40,31 @@
             <section class="section-block container">
                     <h2 hidden>Преимущества</h2>
                     <ul class="advantages">
-                        <li class="advantages-list">
-                            <img class="advantages-item" src="./images/antenna1.svg" alt="антена">
+                        <li class="advantages-list antenna">
+                            <svg class="advantages-icon" width=70px height=70px> 
+                                <use href="./images/sprite.svg#antenna"></use>
+                            </svg>
                             <h3 class="title">Внимание к деталям</h3>
                             <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                         </li>
-                        <li class="advantages-list">
-                            <img class="advantages-item" src="./images/clock1.svg" alt="часы">
+                        <li class="advantages-list clock">
+                            <svg class="advantages-icon"> 
+                                <use href="images/sprite.svg#icon-clock"></use>   
+                            </svg>
                             <h3 class="title">Пунктуальность</h3>
                             <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                         </li>
-                        <li class="advantages-list">
-                            <img class="advantages-item" src="./images/diagram1.svg" alt="диаграмма">
+                        <li class="advantages-list diagram">
+                            <svg class="advantages-icon"> 
+                                <use href="./images/sprite.svg#icon-diagram"></use>
+                            </svg>
                             <h3 class="title">Планирование</h3>
                             <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                         </li>
-                        <li class="advantages-list">
-                            <img class="advantages-item" src="./images/astronaut1.svg" alt="астронавт">
+                        <li class="advantages-list astronaut">
+                            <svg class="advantages-icon"> 
+                                <use href="./images/sprite.svg#icon-astronaut"></use>
+                            </svg>
                             <h3 class="title">Современные технологии</h3>
                             <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                         </li>
@@ -67,15 +75,15 @@
                     <h2 class="section-title">Чем мы занимаемся</h2>
                     <ul class="activities">
                         <li class="activities-item">
-                            <img src="./images/box_1.png" alt="laptop" width="370">
+                            <img src="./images/box_1.jpg" alt="laptop" width="370">
                         <h3 class="title-activities">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
                         </li>
                         <li class="activities-item">
-                            <img src="./images/box_2.png" alt="smartphone" width="370">
+                            <img src="./images/box_2.jpg" alt="smartphone" width="370">
                             <h3 class="title-activities">МОБИЛЬНЫЕ РЕШЕНИЯ</h3>
                         </li>
                         <li class="activities-item">
-                            <img src="./images/box_3.png" alt="monitor" width="370">
+                            <img src="./images/box_3.jpg" alt="monitor" width="370">
                             <h3 class="title-activities">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
                         </li>
                     </ul>
@@ -105,7 +113,7 @@
                     </ul>
                 </li>
                 <li class="team-item">
-                    <img src="./images/developer.png" alt="frontend developer" width="270">
+                    <img src="./images/developer.jpg" alt="frontend developer" width="270">
                     <h3 class="team-member">Ольга Иванова</h3>
                     <p class="team-member-title">Frontend Developer</p>
                     <ul class="social-media-list">
@@ -124,7 +132,7 @@
                     </ul>
                 </li>
                 <li class="team-item">
-                    <img src="./images/marketing.png" alt="marketologist" width="270">
+                    <img src="./images/marketing.jpg" alt="marketologist" width="270">
                     <h3 class="team-member">Андрей Шевченко</h3>
                     <p class="team-member-title">Marketing</p>
                     <ul class="social-media-list">
@@ -143,7 +151,7 @@
                     </ul>
                 </li>
                 <li class="team-item">
-                    <img src="./images/ui.png" alt="ui marketolog" width="270">
+                    <img src="./images/ui.jpg" alt="ui marketolog" width="270">
                     <h3 class="team-member">Иван Николаев</h3>
                     <p class="team-member-title">UI Designer</p>
                     <ul class="social-media-list">
@@ -196,21 +204,22 @@
             <div class="footer-container2">
                 <b class="appeal">Присоединяйтесь</b>
                 <ul class="social-media-list">
-                    <li>
+                    <li class="instagram">
                         <a href="" aria-label="instagram"><img src="./images/Ellipse.png" alt=""></a>
                     </li>
-                    <li>
+                    <li class="twitter">
                         <a href="" aria-label="tweeter"><img src="./images/Ellipse_2.png" alt=""></a>
                     </li>
-                    <li>
+                    <li class="facebook">
                         <a href="" aria-label="facebook"><img src="./images/Ellipse_3.png" alt=""></a>
                     </li>
-                    <li>
+                    <li class="linkedin">
                         <a href="" aria-label="linkedin"><img src="./images/Ellipse_4.png" alt=""></a>
                     </li>
                 </ul>
             </div>
             <b class="appeal">подпишитесь на рассылку</b>
+            <a class="button1" href="">Подписаться</a>
         </div>
     </footer>
 </body>
