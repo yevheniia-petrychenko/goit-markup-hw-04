@@ -35,7 +35,7 @@ body {
 
 /* site-header */
 .container {
-    min-width: 1200px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -115,7 +115,7 @@ body {
     margin-left: auto;
     }
 .contacts-item {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     color: var(--primary-text-colour);
     font-weight: 500;
@@ -138,7 +138,7 @@ body {
 }
 .contacts-icon {
     margin-right: 10px;
-    color: var(--icons-colour);
+    fill: var(--primary-text-colour);
 }
 .page-header .container {
     display: flex;
@@ -370,6 +370,7 @@ margin-left: 30px;
     width: 231px;
 }
 .footer-container1 .logo {
+    color: var(--background-colour);
     margin-bottom: 20px;
 }
 .footer .social-media-list a {
